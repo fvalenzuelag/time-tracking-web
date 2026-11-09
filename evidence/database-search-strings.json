@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_206725a9e6d5effb7c7326b36a1174a9503001a7352b071ab3161c5a8a6a77a4",
+  "subject": {
+    "name": "TimingDatabase",
+    "digest": {
+      "sha256": "574d381f1b04ff4de707d2c2f1561c3fe7fb8321cc9d81dda87de4490fc780cc"
+    },
+    "format": "mach-o",
+    "architecture": "arm64",
+    "local_path": "/Applications/Timing.app/Contents/Library/LoginItems/TimingHelper.app/Contents/Frameworks/TimingDatabase.framework/Versions/A/TimingDatabase"
+  },
+  "provider": {
+    "id": "hopper",
+    "name": "Hopper Disassembler",
+    "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "search_strings",
+  "parameters": {
+    "pattern": "search|CONTAINS|BEGINSWITH|MATCHES",
+    "mode": "regex",
+    "case_sensitive": false
+  },
+  "raw_result": [
+    {
+      "address": "0x359e60",
+      "value": "educationAndResearch"
+    },
+    {
+      "address": "0x359e80",
+      "value": "Education & Research"
+    },
+    {
+      "address": "0x359ea0",
+      "value": "Domain List: Name of the category for education and research-related websites."
+    },
+    {
+      "address": "0x359f70",
+      "value": "researchgate.net"
+    },
+    {
+      "address": "0x35ac80",
+      "value": "Skipping a rule that refers to a variable or SELF, which raises when evaluated; it matches nothing."
+    },
+    {
+      "address": "0x35acf0",
+      "value": "_RemoveContainsPredicatesWithEmptyValue_Enabled"
+    },
+    {
+      "address": "0x35b670",
+      "value": "%K CONTAINS[cd] %@"
+    },
+    {
+      "address": "0x35b840",
+      "value": "NSPredicate.containsKeyPathNotSupportedForCaching"
+    },
+    {
+      "address": "0x362103",
+      "value": "containsObject:"
+    }
+  ],
+  "normalized_result": [
+    {
+      "address": "0x359e60",
+      "value": "educationAndResearch"
+    },
+    {
+      "address": "0x359e80",
+      "value": "Education & Research"
+    },
+    {
+      "address": "0x359ea0",
+      "value": "Domain List: Name of the category for education and research-related websites."
+    },
+    {
+      "address": "0x359f70",
+      "value": "researchgate.net"
+    },
+    {
+      "address": "0x35ac80",
+      "value": "Skipping a rule that refers to a variable or SELF, which raises when evaluated; it matches nothing."
+    },
+    {
+      "address": "0x35acf0",
+      "value": "_RemoveContainsPredicatesWithEmptyValue_Enabled"
+    },
+    {
+      "address": "0x35b670",
+      "value": "%K CONTAINS[cd] %@"
+    },
+    {
+      "address": "0x35b840",
+      "value": "NSPredicate.containsKeyPathNotSupportedForCaching"
+    },
+    {
+      "address": "0x362103",
+      "value": "containsObject:"
+    }
+  ],
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Results depend on Hopper's completed static analysis."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "analysis_profile": {
+    "provider": {
+      "id": "hopper",
+      "name": "Hopper Disassembler",
+      "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "mach-o",
+      "architecture": "arm64",
+      "available_architectures": [
+        "arm64",
+        "x86_64"
+      ],
+      "loader": {
+        "source": "derived",
+        "argument_count": 5,
+        "arguments_sha256": "3d087b67854a940e6bde79429b91f25be2ce3da695d6d7c08ee2dde525b442d5"
+      }
+    },
+    "digest": "33a61348664336e357d7bae95e69efb7b8024172cce159df07657d9fdee8f326"
+  }
+}

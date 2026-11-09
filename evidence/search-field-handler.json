@@ -1,0 +1,54 @@
+{
+  "evidence_id": "ev_a2fa0f8fbf2bc7169641a4c2726feac9495ef16454a79e0a8946f77d40f2111d",
+  "subject": {
+    "name": "Timing",
+    "digest": {
+      "sha256": "020988494fb83148c1b46903f9c38a2a3fd88352c9cbf7b739e51ff6298e4f7e"
+    },
+    "format": "mach-o",
+    "architecture": "arm64",
+    "local_path": "/Applications/Timing.app/Contents/MacOS/Timing"
+  },
+  "provider": {
+    "id": "hopper",
+    "name": "Hopper Disassembler",
+    "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "procedure_pseudo_code",
+  "parameters": {
+    "procedure": "0x10011ba58"
+  },
+  "raw_result": "    sub_100032634(self, _cmd, arg2, sub_10011b9b0);\n    return;\n",
+  "normalized_result": "    sub_100032634(self, _cmd, arg2, sub_10011b9b0);\n    return;\n",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Results depend on Hopper's completed static analysis."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "analysis_profile": {
+    "provider": {
+      "id": "hopper",
+      "name": "Hopper Disassembler",
+      "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "mach-o",
+      "architecture": "arm64",
+      "available_architectures": [
+        "arm64",
+        "x86_64"
+      ],
+      "loader": {
+        "source": "derived",
+        "argument_count": 5,
+        "arguments_sha256": "3d087b67854a940e6bde79429b91f25be2ce3da695d6d7c08ee2dde525b442d5"
+      }
+    },
+    "digest": "33a61348664336e357d7bae95e69efb7b8024172cce159df07657d9fdee8f326"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "evidence_id": "ev_2c653db9152a0018754f4b970958c36d448a585e6175e21db523afc2985f7af1",
+  "subject": {
+    "name": "Timing",
+    "digest": {
+      "sha256": "020988494fb83148c1b46903f9c38a2a3fd88352c9cbf7b739e51ff6298e4f7e"
+    },
+    "format": "mach-o",
+    "architecture": "arm64",
+    "local_path": "/Applications/Timing.app/Contents/MacOS/Timing"
+  },
+  "provider": {
+    "id": "hopper",
+    "name": "Hopper Disassembler",
+    "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "procedure_pseudo_code",
+  "parameters": {
+    "procedure": "0x100132be8"
+  },
+  "raw_result": "    r2 = arg2;\n    r31 = r31 - 0x50;\n    var_20 = r22;\n    decomp_var_18 = r21;\n    var_10 = r20;\n    decomp_var_8 = r19;\n    saved_fp = r29;\n    decomp_var_m8 = r30;\n    r19 = self;\n    if (r2 != 0x0) {\n            [r19 retain];\n            Swift._bridgeAnyObjectToAny(r2, swift_unknownObjectRetain(r2));\n            swift_unknownObjectRelease(r2);\n    }\n    else {\n            var_40 = q0;\n            [r19 retain];\n    }\n    r20 = [[r19 searchField] retain];\n    r21 = Swift.String._bridgeToObjectiveC(r20);\n    [r20 setStringValue:r21];\n    [r19 release];\n    [r20 release];\n    [r21 release];\n    sub_100005ed8(&var_40, 0x1002a5d20, 0x10025aeb0);\n    return;\n",
+  "normalized_result": "    r2 = arg2;\n    r31 = r31 - 0x50;\n    var_20 = r22;\n    decomp_var_18 = r21;\n    var_10 = r20;\n    decomp_var_8 = r19;\n    saved_fp = r29;\n    decomp_var_m8 = r30;\n    r19 = self;\n    if (r2 != 0x0) {\n            [r19 retain];\n            Swift._bridgeAnyObjectToAny(r2, swift_unknownObjectRetain(r2));\n            swift_unknownObjectRelease(r2);\n    }\n    else {\n            var_40 = q0;\n            [r19 retain];\n    }\n    r20 = [[r19 searchField] retain];\n    r21 = Swift.String._bridgeToObjectiveC(r20);\n    [r20 setStringValue:r21];\n    [r19 release];\n    [r20 release];\n    [r21 release];\n    sub_100005ed8(&var_40, 0x1002a5d20, 0x10025aeb0);\n    return;\n",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Results depend on Hopper's completed static analysis."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "analysis_profile": {
+    "provider": {
+      "id": "hopper",
+      "name": "Hopper Disassembler",
+      "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "mach-o",
+      "architecture": "arm64",
+      "available_architectures": [
+        "arm64",
+        "x86_64"
+      ],
+      "loader": {
+        "source": "derived",
+        "argument_count": 5,
+        "arguments_sha256": "3d087b67854a940e6bde79429b91f25be2ce3da695d6d7c08ee2dde525b442d5"
+      }
+    },
+    "digest": "33a61348664336e357d7bae95e69efb7b8024172cce159df07657d9fdee8f326"
+  }
+}

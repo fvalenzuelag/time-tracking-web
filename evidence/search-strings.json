@@ -1,0 +1,314 @@
+{
+  "evidence_id": "ev_31d17dc2a74d260163242822980cd73ae3ae6c0d278bc27c8b837226b0c0ef2f",
+  "subject": {
+    "name": "Timing",
+    "digest": {
+      "sha256": "020988494fb83148c1b46903f9c38a2a3fd88352c9cbf7b739e51ff6298e4f7e"
+    },
+    "format": "mach-o",
+    "architecture": "arm64",
+    "local_path": "/Applications/Timing.app/Contents/MacOS/Timing"
+  },
+  "provider": {
+    "id": "hopper",
+    "name": "Hopper Disassembler",
+    "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "search_strings",
+  "parameters": {
+    "pattern": "search|filter|contains\\[|predicate",
+    "mode": "regex",
+    "case_sensitive": false
+  },
+  "raw_result": [
+    {
+      "address": "0x1002609f0",
+      "value": "T@\\\"NSSearchToolbarItem\\\",N,&,VlgN"
+    },
+    {
+      "address": "0x10026134b",
+      "value": "beginSearchInteraction"
+    },
+    {
+      "address": "0x100262f51",
+      "value": "addFilter:"
+    },
+    {
+      "address": "0x1002648a0",
+      "value": "search:"
+    },
+    {
+      "address": "0x100265588",
+      "value": "outlineView:shouldTypeSelectForEvent:withCurrentSearchString:"
+    },
+    {
+      "address": "0x100266168",
+      "value": "searchField"
+    },
+    {
+      "address": "0x100266177",
+      "value": "searchFieldValueChanged:"
+    },
+    {
+      "address": "0x100266194",
+      "value": "searchItem"
+    },
+    {
+      "address": "0x100267084",
+      "value": "setPreferredWidthForSearchField:"
+    },
+    {
+      "address": "0x1002671cf",
+      "value": "setSearchItem:"
+    },
+    {
+      "address": "0x1002672b6",
+      "value": "setShowFiltersButton:"
+    },
+    {
+      "address": "0x1002676f3",
+      "value": "showFilters:"
+    },
+    {
+      "address": "0x100267700",
+      "value": "showFiltersButton"
+    },
+    {
+      "address": "0x100267f73",
+      "value": "tableView:shouldTypeSelectForEvent:withCurrentSearchString:"
+    },
+    {
+      "address": "0x1002721b0",
+      "value": "@\\\"NSSearchToolbarItem\\\""
+    },
+    {
+      "address": "0x100275000",
+      "value": " should have been filtered out"
+    },
+    {
+      "address": "0x1002767d0",
+      "value": "Layout: No Data: Message when a filter has been selected."
+    },
+    {
+      "address": "0x100276810",
+      "value": "Consider clearing the search field."
+    },
+    {
+      "address": "0x100276840",
+      "value": "Layout: No Data: Message when the search field is not empty."
+    },
+    {
+      "address": "0x100276880",
+      "value": "Consider using the filter selector in the title bar to select another filter (or none)."
+    },
+    {
+      "address": "0x100276960",
+      "value": "Layout: No Data: Message when the device filter is not empty."
+    },
+    {
+      "address": "0x1002769a0",
+      "value": "Consider clearing the billing status filter or selecting different billing statuses."
+    },
+    {
+      "address": "0x100276a00",
+      "value": "Layout: No Data: Message when a billing status filter has been applied."
+    },
+    {
+      "address": "0x100278b30",
+      "value": "AppDelegate.searchForExistingSampleEntities"
+    },
+    {
+      "address": "0x10027a200",
+      "value": "GroupingListViewController.AddFilter"
+    },
+    {
+      "address": "0x10027a230",
+      "value": "Grouping List: Name of a new filter."
+    },
+    {
+      "address": "0x10027a340",
+      "value": "GroupingListViewController.DropPredicate"
+    },
+    {
+      "address": "0x10027aab0",
+      "value": "MainWindowController.showFilters"
+    },
+    {
+      "address": "0x10027aea0",
+      "value": "MainWindowController.filterSelectionChanged"
+    },
+    {
+      "address": "0x10027aed0",
+      "value": "atLeastOneFilterSelected"
+    },
+    {
+      "address": "0x10027aef0",
+      "value": "MainWindowController.atLeastOneFilterSelected"
+    },
+    {
+      "address": "0x10027afa0",
+      "value": "Main Window: Title of the filter button when not exactly one filter is selected."
+    }
+  ],
+  "normalized_result": [
+    {
+      "address": "0x1002609f0",
+      "value": "T@\\\"NSSearchToolbarItem\\\",N,&,VlgN"
+    },
+    {
+      "address": "0x10026134b",
+      "value": "beginSearchInteraction"
+    },
+    {
+      "address": "0x100262f51",
+      "value": "addFilter:"
+    },
+    {
+      "address": "0x1002648a0",
+      "value": "search:"
+    },
+    {
+      "address": "0x100265588",
+      "value": "outlineView:shouldTypeSelectForEvent:withCurrentSearchString:"
+    },
+    {
+      "address": "0x100266168",
+      "value": "searchField"
+    },
+    {
+      "address": "0x100266177",
+      "value": "searchFieldValueChanged:"
+    },
+    {
+      "address": "0x100266194",
+      "value": "searchItem"
+    },
+    {
+      "address": "0x100267084",
+      "value": "setPreferredWidthForSearchField:"
+    },
+    {
+      "address": "0x1002671cf",
+      "value": "setSearchItem:"
+    },
+    {
+      "address": "0x1002672b6",
+      "value": "setShowFiltersButton:"
+    },
+    {
+      "address": "0x1002676f3",
+      "value": "showFilters:"
+    },
+    {
+      "address": "0x100267700",
+      "value": "showFiltersButton"
+    },
+    {
+      "address": "0x100267f73",
+      "value": "tableView:shouldTypeSelectForEvent:withCurrentSearchString:"
+    },
+    {
+      "address": "0x1002721b0",
+      "value": "@\\\"NSSearchToolbarItem\\\""
+    },
+    {
+      "address": "0x100275000",
+      "value": " should have been filtered out"
+    },
+    {
+      "address": "0x1002767d0",
+      "value": "Layout: No Data: Message when a filter has been selected."
+    },
+    {
+      "address": "0x100276810",
+      "value": "Consider clearing the search field."
+    },
+    {
+      "address": "0x100276840",
+      "value": "Layout: No Data: Message when the search field is not empty."
+    },
+    {
+      "address": "0x100276880",
+      "value": "Consider using the filter selector in the title bar to select another filter (or none)."
+    },
+    {
+      "address": "0x100276960",
+      "value": "Layout: No Data: Message when the device filter is not empty."
+    },
+    {
+      "address": "0x1002769a0",
+      "value": "Consider clearing the billing status filter or selecting different billing statuses."
+    },
+    {
+      "address": "0x100276a00",
+      "value": "Layout: No Data: Message when a billing status filter has been applied."
+    },
+    {
+      "address": "0x100278b30",
+      "value": "AppDelegate.searchForExistingSampleEntities"
+    },
+    {
+      "address": "0x10027a200",
+      "value": "GroupingListViewController.AddFilter"
+    },
+    {
+      "address": "0x10027a230",
+      "value": "Grouping List: Name of a new filter."
+    },
+    {
+      "address": "0x10027a340",
+      "value": "GroupingListViewController.DropPredicate"
+    },
+    {
+      "address": "0x10027aab0",
+      "value": "MainWindowController.showFilters"
+    },
+    {
+      "address": "0x10027aea0",
+      "value": "MainWindowController.filterSelectionChanged"
+    },
+    {
+      "address": "0x10027aed0",
+      "value": "atLeastOneFilterSelected"
+    },
+    {
+      "address": "0x10027aef0",
+      "value": "MainWindowController.atLeastOneFilterSelected"
+    },
+    {
+      "address": "0x10027afa0",
+      "value": "Main Window: Title of the filter button when not exactly one filter is selected."
+    }
+  ],
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Results depend on Hopper's completed static analysis."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "analysis_profile": {
+    "provider": {
+      "id": "hopper",
+      "name": "Hopper Disassembler",
+      "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "mach-o",
+      "architecture": "arm64",
+      "available_architectures": [
+        "arm64",
+        "x86_64"
+      ],
+      "loader": {
+        "source": "derived",
+        "argument_count": 5,
+        "arguments_sha256": "3d087b67854a940e6bde79429b91f25be2ce3da695d6d7c08ee2dde525b442d5"
+      }
+    },
+    "digest": "33a61348664336e357d7bae95e69efb7b8024172cce159df07657d9fdee8f326"
+  }
+}

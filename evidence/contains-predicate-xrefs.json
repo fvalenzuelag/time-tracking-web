@@ -1,0 +1,66 @@
+{
+  "evidence_id": "ev_bac43de8cf86089c349131bd1f7f3ee823f9c48da8126eff800ceac8cb042350",
+  "subject": {
+    "name": "TimingDatabase",
+    "digest": {
+      "sha256": "574d381f1b04ff4de707d2c2f1561c3fe7fb8321cc9d81dda87de4490fc780cc"
+    },
+    "format": "mach-o",
+    "architecture": "arm64",
+    "local_path": "/Applications/Timing.app/Contents/Library/LoginItems/TimingHelper.app/Contents/Frameworks/TimingDatabase.framework/Versions/A/TimingDatabase"
+  },
+  "provider": {
+    "id": "hopper",
+    "name": "Hopper Disassembler",
+    "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "xrefs",
+  "parameters": {
+    "address": "0x35b670"
+  },
+  "raw_result": [
+    "0x1a2884",
+    "0x1a80f8",
+    "0x1a8254",
+    "0x1aa80c",
+    "0x1aa9bc"
+  ],
+  "normalized_result": [
+    "0x1a2884",
+    "0x1a80f8",
+    "0x1a8254",
+    "0x1aa80c",
+    "0x1aa9bc"
+  ],
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Results depend on Hopper's completed static analysis."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "analysis_profile": {
+    "provider": {
+      "id": "hopper",
+      "name": "Hopper Disassembler",
+      "version": "launcher-sha256:0964601782b7a6a5cc0a6a3d687f21cd81eb9356585016c1e519a51573163521"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "mach-o",
+      "architecture": "arm64",
+      "available_architectures": [
+        "arm64",
+        "x86_64"
+      ],
+      "loader": {
+        "source": "derived",
+        "argument_count": 5,
+        "arguments_sha256": "3d087b67854a940e6bde79429b91f25be2ce3da695d6d7c08ee2dde525b442d5"
+      }
+    },
+    "digest": "33a61348664336e357d7bae95e69efb7b8024172cce159df07657d9fdee8f326"
+  }
+}
